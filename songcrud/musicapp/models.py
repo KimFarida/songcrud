@@ -20,7 +20,7 @@ class Song(models.Model):
     artiste_id = models.IntegerField()
 
     def __str__(self):
-        return self.title
+        return self.title 
 
 class Lyric(models.Model):
     song_rel = models.ForeignKey(Song, blank=True, null=True, on_delete=models.CASCADE)
